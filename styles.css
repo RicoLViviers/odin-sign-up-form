@@ -36,8 +36,7 @@ body {
     border-radius: 16px;
 }
 
-.form-container::before {
-    content: "Create your account";
+.form-container::before, .main-text {
     display: block;
     width: 100%;
     color: #FFFFFF;
@@ -46,8 +45,7 @@ body {
     letter-spacing: -1px;
 }
 
-.form-container::after {
-    content: "Join us and get ready for your next journey.";
+.form-container::after, .subtext {
     display: block;
     order: -1;
     width: 100%;

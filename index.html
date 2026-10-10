@@ -14,17 +14,20 @@
 <body>
     <div id="container">
         <img src="assets/airport.jpg" alt="Image of airport" width="400" id="plane-image">
-        <form class="form-container">
+        <form action="/submit" method="POST" class="form-container">
+            <p class="subtext">Join us and get ready for your next journey.</p>
+            <p class="main-text">Create your account.</p>
+
             <input type="text" placeholder="First name">
             <input type="text" placeholder="Last name">
             
             <input type="email" placeholder="Email">
             <input type="tel" placeholder="Phone number">
 
-            <input type="pwd" placeholder="Password">
-            <input type="confirmPwd" placeholder="Confirm Password">
+            <input id="password" type="password" placeholder="Password">
+            <input id="confirm-password" type="password" placeholder="Confirm Password">
 
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
     <script src="script.js"></script>
