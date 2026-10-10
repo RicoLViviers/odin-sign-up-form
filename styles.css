@@ -1,6 +1,81 @@
-*
-{
+* {
+    box-sizing: border-box;
+    margin: 0;
     font-family: "Roboto", sans-serif;
-    background-color: darkblue;
-    color: white;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F2E5E1;
+    color: #292524;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    padding: 24px;
+    gap: 24px;
+}
+
+#plane-image {
+    width: 42%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    gap: 18px 14px;
+
+    padding: 48px;
+    background-color: #292524;
+    border-radius: 16px;
+}
+
+.form-container::before {
+    content: "Create your account";
+    display: block;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.form-container::after {
+    content: "Join us and get ready for your next journey.";
+    display: block;
+    order: -1;
+    width: 100%;
+    color: #B9ACA7;
+    font-size: 15px;
+}
+
+.form-container input {
+    width: calc(50% - 7px);
+    min-width: 0;
+    height: 48px;
+    padding: 0 14px;
+
+    color: #FFFFFF;
+    background-color: #393331;
+    border: 1px solid #514743;
+    border-radius: 8px;
+    outline: none;
+
+    font-size: 14px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-container input:focus {
+    border-color: #C47D68;
+    background-color: #403633;
+}
+
+.form-container input::placeholder {
+    color: #B9ACA7;
 }
