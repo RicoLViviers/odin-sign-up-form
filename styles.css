@@ -77,3 +77,28 @@ body {
 .form-container input::placeholder {
     color: #B9ACA7;
 }
+
+
+button {
+    width: 200px;
+    padding: 14px 24px;
+
+    color: #FFFFFF;
+    background-color: #C47D68;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #AD6855;
+    transform: translateY(1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
